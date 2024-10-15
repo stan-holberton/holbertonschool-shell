@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d | wc -l | awk '{print $1-2}'
+find . -type d | grep -v '^.$' | grep -v '^..$' | wc -l
